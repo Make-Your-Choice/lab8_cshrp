@@ -50,7 +50,7 @@ namespace lab8_app {
 			{
 				this.spec_offer[i] = spec_offer[i];
 			}
-			Console.WriteLine("Empty book created\n");
+			Console.WriteLine("\nEmpty book created\n");
 		}
 		public String Title { //получение названия
 			get { return title; }
@@ -190,7 +190,7 @@ namespace lab8_app {
 			book2.output();
 			Console.WriteLine("\nNumber in stock of 1 and 2: {0}", book1.summarize(book2)); //сложение количетва двух книг
 			String book_genre = book1.Genre; //получение значения геттером
-			Console.WriteLine("\nFirst book genre is {0}, str length of genre is {1}", book_genre, book_genre.Length); //вычисление длины строки жанр
+			Console.WriteLine("First book genre is {0}, str length of genre is {1}", book_genre, book_genre.Length); //вычисление длины строки жанр
 			Console.WriteLine("\nFirst book");
 			book1.output(); //вывод
 			book1.sell(); //продажа
@@ -206,10 +206,10 @@ namespace lab8_app {
 			book1.predictable_profit(out profit); //подсчет ожидаемой прибыли через out
 			Console.WriteLine("\nPredictable profit: {0}", profit);
 			book1.predictable_popularity(ref popularity); //подсчет ожидаемой популярности через ref
-			Console.WriteLine("\nPredictable popularity: {0}", popularity);
-			Console.WriteLine("\nFirst book title length is {0}",book_store.title_len(book1)); //вывод значения длины строки названия
+			Console.WriteLine("Predictable popularity: {0}", popularity);
+			Console.WriteLine("First book title length is {0}",book_store.title_len(book1)); //вывод значения длины строки названия
 			book_store.space_left = 50; //установка значения оставшегося места
-			Console.WriteLine("\nSpace left in the store {0}",book_store.space_left);
+			Console.WriteLine("Space left in the store {0}",book_store.space_left);
 			special[] spec_offer0 = new special[1];
 			special[] spec_offer3 = new special[1];
 			spec_offer0[0] = new special();
