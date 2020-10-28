@@ -40,8 +40,8 @@ namespace lab8_app {
 		int price=0; //цена
 		int num_stock=0; //количество в магазине
 		int popularity=0; //популярность
-		public static int space_left;
-		static public int title_len(book_store book) {
+		public static int space_left; //статическое поле отавшееся в магазине место
+		static public int title_len(book_store book) { //статический метод вычисления длины названия
 			return book.title.Length;
 		}
 		public book_store(special[] spec_offer){ //конструктор с параметром
@@ -207,8 +207,8 @@ namespace lab8_app {
 			Console.WriteLine("\nPredictable profit: {0}", profit);
 			book1.predictable_popularity(ref popularity); //подсчет ожидаемой популярности через ref
 			Console.WriteLine("\nPredictable popularity: {0}", popularity);
-			Console.WriteLine("\nFirst book title length is {0}",book_store.title_len(book1));
-			book_store.space_left = 50;
+			Console.WriteLine("\nFirst book title length is {0}",book_store.title_len(book1)); //вывод значения длины строки названия
+			book_store.space_left = 50; //установка значения оставшегося места
 			Console.WriteLine("\nSpace left in the store {0}",book_store.space_left);
 			special[] spec_offer0 = new special[1];
 			special[] spec_offer3 = new special[1];
