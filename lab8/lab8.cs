@@ -218,12 +218,12 @@ namespace lab8_app {
 			spec_offer3[0] = spec_offer0[0] + 5; //перегрузка + постфиксная
 			Console.WriteLine($"\nSpecial offer + 5 = {spec_offer3[0].bonus_num}");
 			spec_offer3[0] = 10 + spec_offer0[0]; //перегрузка + префиксная
-			Console.WriteLine($"\n10 + Special offer = {spec_offer3[0].bonus_num}");
+			Console.WriteLine($"10 + Special offer = {spec_offer3[0].bonus_num}");
 			spec_offer3[0] = spec_offer0[0] ++; //перегрузка ++ постфиксная
-			Console.WriteLine($"\nSpecial offer ++ = {spec_offer3[0].bonus_num}");
+			Console.WriteLine($"Special offer ++ = {spec_offer3[0].bonus_num}");
 			spec_offer3[0].set_default();
 			spec_offer3[0] = ++ spec_offer0[0]; //перегрузка ++ префиксная
-			Console.WriteLine($"\n++ Special offer = {spec_offer3[0].bonus_num}");
+			Console.WriteLine($"++ Special offer = {spec_offer3[0].bonus_num}");
 		}
 	}
 }
